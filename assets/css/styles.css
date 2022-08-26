@@ -131,7 +131,7 @@ input:focus-visible, textarea:focus-visible{
 header {
     background-color: var(--header-background-color);
     min-height: 850px; /**altura mínima do elemento**/
-    display: flex;
+    display: flex;  
     flex-direction: column;
     align-items: center;
     position: relative;
@@ -150,13 +150,13 @@ header::before {
     background-position: center 90%;
     filter: saturate(0);
     opacity: 0.2;
-    
-}
+
+}  
 
 .header-content {
     max-width: 700px; /**largura máxima do elemento**/
     padding: 80px 20px; /**espaço entre seu conteúdo e sua borda**/
-    align-items: center;
+    text-align: center;
     z-index: 2;
 }
 
@@ -164,7 +164,7 @@ header::before {
     width: 80%;
 }
 
-.header-content p{
+.header-content p {
     margin: 30px 0 50px; /** 1º valor top, 2º valor esqueda e direita, 3º valor em baixo do elemento **/  
 }
 
@@ -190,7 +190,7 @@ header::before {
     height: 100%;
     background-color: var(--character-top-image-color);
     bottom: -3px;
-
+  
     mask: var(--character-top-image-src) bottom / contain no-repeat;
     -webkit-mask: var(--character-top-image-src) bottom / 100% no-repeat;
 }
@@ -202,7 +202,7 @@ header::before {
     transform: rotateZ(180deg) scaleX(-1); /** espelhar a imagem **/
     position: relative;
 
-    mask: var(--character-bottom-image-src) bottom / contain  no-repeat;
+    mask: var(--character-bottom-image-src) bottom / contain no-repeat;
     -webkit-mask: var(--character-bottom-image-src) bottom / 100% no-repeat;
 }
 
